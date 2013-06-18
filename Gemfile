@@ -10,7 +10,11 @@ gem 'sqlite3'
 
 # Gems used only for assets and not required
 # in production environments by default.
+gem 'omniauth'
+gem 'omniauth-facebook'
 gem "koala", "~> 1.7.0rc1"
+gem "xmpp4r_facebook"
+
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
