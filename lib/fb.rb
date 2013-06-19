@@ -2,7 +2,7 @@ class Fb
   class << self
 
     def get_likes
-      @graph = Koala::Facebook::API.new("CAACEdEose0cBAJTjxxwEJ1OESx69HevDpnztcYVPjKPsQZAQQPfIigN77azNiitEWs08MbRXieDdZCGPF0nhas9ZCqqKeHSDNkdSdn78M60C8yCQJPTJGen19xWi4tjWkVDOYJgDsteKME3eCtMCIj7SeA6Gs8ZD")
+      @graph = Koala::Facebook::API.new("CAACEdEose0cBAG6RZCzFLLZCKcfV4js436ZBstlt53vBi71C11tJZA39bHbnx8ECIitav4Wet7VZAgEW0bvrufksd6wtXhAUs9XQRwHUwmJDh3Bc90PRR7ulAVdraeGNRmG91l40gobeZAPCcutJarR7N1KRiGoIsZD")
       like_data = @graph.get_object("661049043910936/likes")
       likes = Array.new
       until(like_data.nil?)
