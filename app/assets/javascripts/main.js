@@ -2,7 +2,11 @@ $(document).ready(function() {
     var clip = new ZeroClipboard($(".copy-button"), {
       moviePath: "ZeroClipboard.swf"
     });
-
+		clip.on("mouseup", function(){
+			var link = this.getAttribute("link")
+			// $(location).attr('href',link);
+			window.open(link);
+		});
     clip.on('load', function (client) {
       debugstr("Flash movie loaded and ready.");
     });
