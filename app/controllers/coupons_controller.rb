@@ -2,6 +2,7 @@ class CouponsController < ApplicationController
   # GET /coupons
   # GET /coupons.json
   def index
+    @page = params[:page] || 0
     @ids = [
       'http://facebook.com/messages/100003210697856',
       'http://facebook.com/messages/100003404895405',

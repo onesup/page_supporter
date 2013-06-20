@@ -1,8 +1,8 @@
 <h1>Listing coupons</h1>
-
+<%= @page%>
 <table>
-	<% i = 0 %>
-	<% while i < 100 %>
+	<% i = @page.to_i %>
+	<% while i < @page.to_i + 500 %>
 	<% color = (i % 2 == 0)? 'odd' : 'even'%>
   <tr class="<%= color %>">
 		<td><%= i+1 %></td>
